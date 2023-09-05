@@ -1,0 +1,190 @@
+html, body {
+  height: 100%;
+  width: auto;
+  margin: 0px;
+  background-color:aliceblue;
+}
+
+/*makes sure that there is no space between top of page and navigation bar*/
+body{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.navigationBar {
+  position:fixed;
+  top: 0;
+  z-index: 2;
+  font-family: 'Work Sans', sans-serif;
+  background-color:#D4F1F4;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  font-size:15px;
+  width: 100%;
+  overflow: auto;
+}
+.navigationBar a {
+  color: #05445E;
+  text-align: center;
+  float: left;
+  padding: 10px;
+  text-decoration: none;
+  width: 25%
+}
+.navigationBar a:hover {
+  background-color: #05445E;
+  color: #D4F1F4;
+}
+
+/* .navigationBar {
+  position:fixed;
+  top: 0;
+  z-index: 2;
+  font-family: 'Cabin Sketch', cursive;
+  background-color:white;
+  width:100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5%;
+} */
+
+/*adjusts and orients heading and intro blurb*/
+.learnPageIntro {
+  font-family: 'Krub', sans-serif;
+  padding:10px;
+  padding-top:40px;
+  text-align:center;
+  background-color:navy;
+  color:white;
+  font-size: 15px;
+}
+
+h1{
+  margin:10px;
+  font-family:'Permanent Marker', cursive;
+  font-size:30px;
+  background-color:#BFD7ED;
+  color: black;
+  text-shadow: 3px 2px white;
+}
+
+/*Orients the ocean fact boxes with flexbox*/
+
+.worldOceans {
+  padding:10px;
+  display: flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content: space-around;
+  font-family: 'Krub', sans-serif;
+  font-size: 15px;
+}
+
+.ocean {
+  position: relative;
+  color: white;
+}
+
+/*adjusts the size of the image*/
+.oceanImage{
+  width:350px;
+  height:200px;
+}
+
+.facts{
+  position:absolute;
+  background-color:navy;
+  max-width: 300px;
+  bottom:20px;
+  left: 20px;
+  opacity: 0;
+}
+
+.facts:hover{
+  cursor: pointer;
+  transition:0.5s ease-out;
+  opacity: 1;
+}
+
+h2{
+  padding: 1px;
+  margin:0px;
+  font-family:'Permanent Marker',cursive;
+}
+p{
+  margin:1px;
+}
+
+/*adjust the size of collapsible bars*/
+.articles{
+  margin: 10px;
+  width:90%;
+}
+
+.collapsible{
+  width: 100%;
+  border: none;
+  outline:none;
+  background-color:#68BBE3;
+  color:black;
+  padding:5px;
+  font-size:15px;
+  font-family: 'Krub', sans-serif;
+  text-align:left;
+  cursor: pointer;
+}
+
+/*changes color of the bar when user reveals content or hoovers their cursor over it */
+.active, .collapsible:hover {
+  background-color:#BFD7ED;
+}
+/*adds plus sign icon to each bar*/
+.collapsible:after{
+  content: '\02795'; /*unicode character for plus sign (+)*/
+  float: right;
+}
+/*changes icon to minus sign when content is revealed*/
+.active:after{
+  content:'\2212'; /*unicode character for minus sign (-)*/
+}
+/*hides content and adjusts aesthetic*/
+.content{
+  padding: 0 5px;
+  overflow: hidden;
+  max-height:0;
+  background-color:#f1f1f1;;
+  transition: max-height 0.5s ease-out;
+}
+
+.articlePreview{
+  height: 200px;
+  width: 200px;
+}
+
+.closingBorder{
+  width:100%;
+  background-color:navy;
+  color:white;
+  font-family: 'Krub', sans-serif;
+  margin-top:20px;
+}
+
+.sourceTitle{
+  text-decoration:underline;
+  font-size:15px;
+}
+
+.sources{
+  font-size: 12px;
+}
+
+.returnToTop {
+  font-family: 'Krub', sans-serif;
+  color:lightblue;
+  font-size:15px;
+  text-decoration:none;
+  font-weight:bold;
+}

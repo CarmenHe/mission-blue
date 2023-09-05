@@ -1,0 +1,115 @@
+html, body {
+  height: 100%;
+  width: auto;
+  background-color: aliceblue;
+  margin:0px;
+}
+
+.navigationBar {
+  position:fixed;
+  top: 0;
+  z-index: 2;
+  font-family: 'Work Sans', sans-serif;
+  background-color:#D4F1F4;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  font-size:15px;
+  width: 100%;
+  overflow: auto;
+}
+.navigationBar a {
+  color: #05445E;
+  text-align: center;
+  float: left;
+  padding: 10px;
+  text-decoration: none;
+  width: 25%
+}
+.navigationBar a:hover {
+  background-color: #05445E;
+  color: #D4F1F4;
+}
+
+.playPageIntro{
+  font-family: 'Krub', sans-serif;
+  padding:10px;
+  padding-top:40px;
+  text-align:center;
+  font-size: 15px;
+  background-color:navy;
+  color:white;
+}
+
+h1 {
+  margin:10px;
+  font-family:'Permanent Marker', cursive;
+  font-size:30px;
+  background-color:#BFD7ED;
+  color: black;
+  text-shadow: 3px 2px white;
+}
+.favSeaAnimalForm{
+  margin: 0;
+  padding:10px;
+  text-align:center;
+  font-family:'Krub', sans-serif;
+  font-size:15px;
+  background-color:#BFD7ED;
+  font-weight:bold;
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+  margin:10px;
+}
+
+.nom {
+  font-family: 'Krub', sans-serif;
+  font-size: 15px;
+  list-style:none;
+}
+.enterr {
+  font-family: 'Krub', sans-serif;
+  font-size: 15px;
+}
+.nameOfSeaAnimal {
+  font-family: 'Krub', sans-serif;
+  font-size: 15px;
+}
+.seaAnimalButton {
+  font-family: 'Krub', sans-serif;
+  font-size: 15px;
+}
+img {
+  height:50%;
+  max-height:400px;
+  width:80%;
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+
+.closingBorder{
+  background-color:navy;
+  color:white;
+  font-family: 'Krub', sans-serif;
+  margin-top:0px;
+}
+
+.sourceTitle{
+  text-decoration:underline;
+  font-size:15px;
+}
+.sources{
+  font-size: 12px;
+}
+
+.returnToTop {
+  font-family: 'Krub', sans-serif;
+  color:lightblue;
+  font-size:15px;
+  text-decoration:none;
+  font-weight:bold;
+}
