@@ -1,4 +1,4 @@
-# mission-blue
+# About Mission Blue
 This is the very first complete website we (Carmen He, Tatiana Cherukhi, Jennica Lee) completed as beginner web developers. It is intended to inform and educate audiences on ocean pollution.
 
 This site was written on repl.it and is made with HTML, CSS, and JavaScript.
